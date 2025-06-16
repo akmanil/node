@@ -82,3 +82,22 @@ const Circle = new circle(5);
 console.log(Circle.diameter);
 Circle.diameter =14;
 console.log(Circle.radius);
+
+// extends keyword
+class Animal{
+    constructor(name){
+        this.name = name;
+    }
+    speak(){
+        console.log(`${this.name}is making a sound`);
+    }
+}
+
+class Dog extends Animal{
+    // super(name);
+    speak(){
+        console.log(`${this.name }is bark`);
+    }
+}
+const dog =new Dog('buddy');
+dog.speak();
