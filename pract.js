@@ -63,3 +63,22 @@ class math {
     }
 }
 math.Add(2,3);
+
+//get set method
+
+
+class circle {
+    constructor(radius){
+        this.radius = radius;
+    }
+    get diameter(){
+        return this.radius *2;
+    }
+    set diameter(value){
+        return this.radius = value/2;
+    }
+}
+const Circle = new circle(5);
+console.log(Circle.diameter);
+Circle.diameter =14;
+console.log(Circle.radius);
