@@ -56,3 +56,10 @@ const emp = new employee("Anil", 23, "EE");
 
 // Call the method
 emp.greet1(); // Output: Anil, 23, EE
+
+class math {
+   static Add(a,b){
+        return console.log(a+b) ; // using static method the class call itself with out instrances
+    }
+}
+math.Add(2,3);
