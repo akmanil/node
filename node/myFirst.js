@@ -4,7 +4,7 @@ var dt = require('./myFirstModule');
 
 http.createServer((req,res) =>{
     res.write('Hello World' +"  " + dt.myDateTime());
-    res.end('Hello World2');
+    res.end('Hello World');
 }).listen(8080);
 
 
